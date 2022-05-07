@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+<style>
+body{
+font-family: Arial, Helvetica, sans-serif;  
+margin: 0px;  
+}    
+header{
+background-color:gray;
+padding: 10px; 
+margin: 10px;   
+}
+h1{
+text-align: center;    
+}
+nav{
+background-color: red;
+width:180px;
+display:inline-block ;    
+}
+nav>a{
+color: white;
+text-decoration: none;
+font-weight: bold;
+margin: 0px 4px;
+}
+nav>a:hover{
+text-decoration: underline;
+
+}
+main{
+margin: 10px;
+background-color: white;
+}
+article{
+background-color: black;
+color: white;    
+}
+article>aside{
+background-color: red;
+color: white;  
+text-align: center;  
+}
+footer{
+text-align: center;
+background-color: black;
+color: white;    
+padding: 5px;
+}
+a>p{
+display: none;    
+}
+a:hover{
+text-decoration: underline;    
+}
+a:hover>p{
+display: block;
+text-decoration: none;
+}
+</style>
+</head>
+<body>
+    <header>
+    <h1>Meu site</h1>
+    <nav>
+        <a href="#">Bolos<p>Bolo de aniversario</p></a>
+       
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+</header>
+    <main>
+    <section id="assuntos">
+
+    </section>
+
+    <section id="noticias">
+    <article>
+        <h2>Noticia sobre o brasil</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laboriosam ut suscipit dolores, aut maxime autem magni quos ab odit a ipsum? Iste nesciunt laboriosam, recusandae error dolorum rem ad?</p>
+        <aside>
+        <p>Artigo escrito por Gustavo guanabara</p>   
+    </aside>
+    </article>
+    <article>
+
+    </article>
+
+    </section>
+    </main>
+    <footer>
+    <p>Desenvolvido por Luan</p>
+    </footer>
+</body>
+</html>

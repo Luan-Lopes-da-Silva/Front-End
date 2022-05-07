@@ -1,0 +1,115 @@
+@charset "UTD-8";
+
+/*Ala dos Bolos*/
+
+#bolos{
+padding: 0px 10px;    
+text-align: center;
+}
+nav{
+display: inline-block;    
+text-align: center;
+}
+
+
+nav>.bolos{
+display: none;
+
+}
+nav>#bolos{
+color:black;
+background-color: red;    
+width: 100px;
+}
+
+nav:hover>.bolos{
+color: black;
+background-color: red;    
+display:block;
+text-decoration: underline;
+}
+    
+.bolos{
+margin: 0px 0px 2px 0px;
+text-align:left;
+}
+
+
+/*Ala das tortas*/
+#tortas{
+padding: 0px 10px;
+text-align: center;    
+}
+nav>.tortas{
+display: none;
+
+}
+
+nav>#tortas{
+color:black;
+background-color: red;    
+width: 100px;
+
+}
+nav:hover>.tortas{
+ color: black;
+ background-color: red;    
+ display:block;
+ text-decoration: underline;
+}
+#bolos{
+position:static;   
+} 
+#carnes{
+position: static;    
+}
+.tortas{
+width: 70px;
+margin: 0px 0px 2px 0px;
+text-align: left;
+}
+   
+
+/*Ala das Carnes*/
+#carnes{
+padding: 0px 10px;    
+text-align: center;
+}
+nav>.carnes{
+ display: none;  
+}
+
+nav>#carnes{
+ color:black;
+ background-color: red;    
+ width: 100px;  
+} 
+nav:hover>.carnes{
+  color: black;
+  background-color: red;    
+  display:block;
+  text-decoration: underline; 
+} 
+
+.carnes{
+  width: 100px;
+  margin: 0px 0px 2px 0px; }
+  
+h1{
+    
+color: white;
+text-align: center;
+margin-bottom: 200px;
+width: 100%;
+}
+
+header{
+background-color: brown; 
+width: 100%;  
+}
+        
+
+    
+
+
+

@@ -1,0 +1,43 @@
+@charset "UTD-8";
+/*
+ID só um elemento
+CLASS varios elementos
+ID Sobrepõe CLASS
+*/
+
+
+
+
+
+body{
+background-color: aquamarine;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+color: blue;    
+}
+
+.principal{
+color: brown;    
+text-align: center;
+background-color: white;
+}
+
+h2{
+color: blue;    
+}
+
+.basico{
+color: green; 
+  
+}
+
+.intermediario{
+color: yellowgreen;
+    
+}
+
+.avancado{
+color:red;    
+}

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+
+body{
+place-items: center;    
+}
+
+h1{
+text-align: center;
+}
+
+#box{
+width: 400px;
+height: 400px;
+background-color:black;
+color: white;
+margin: 0 auto;
+margin-top: 100px;
+}
+
+#msg{
+text-align: center;
+padding-top: 20px;
+font: normal 12pt arial;
+}
+
+#img{
+margin-left: -50px;    
+margin-top: -70px;
+}
