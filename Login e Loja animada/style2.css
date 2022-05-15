@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+body{
+animation: gradiente 10s ease infinite;
+background: linear-gradient(-45deg, #2B555E, #ADD9E3 ,#66C8DE , #485A5E)no-repeat ; 
+background-size: 300% 300%;
+font-family: sans-serif;
+display: flex;   
+align-items: center;
+color: white;
+height: 100vh;
+place-items: center;
+}
+
+.box{
+ margin: 0 auto;
+ width: 400px;
+ height: 400px;   
+ background-color: #485A5E;
+ color: white;
+
+}
+
+#senha{
+ margin-top: 20px;
+ margin-left: 9px;   
+}
+
+label{
+ margin-left: 60px;   
+}
+
+#usuario{
+ margin-top: 150px;   
+}
+
+#enviar{
+  margin-top: 100px;
+  margin-left: 170px;  
+}
+
+
+@keyframes gradiente {
+    0%{
+    background-position: 0% 50%;
+    }
+    50%{
+    background-position: 50% 100%;
+    }
+
+    100%{
+    background-position: 0% 50%;
+    }
+}
