@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola</title>
+    <link rel="stylesheet" href="Coca.css">
+</head>
+    
+<body>
+    <header>
+         <div id="logo">
+            <img src="https://i.ibb.co/B3tzJhq/download.png" alt="Logo Coca-Cola">
+        </div>
+       
+                <nav>
+                    <ul class="menu">
+                        <li>Coca-Cola</li>
+                        <li>Fanta</li>
+                        <li>Guarana</li>
+                        <li>Kuati</li>
+                    </ul>    
+                </nav>    
+                <div class="menu-icon" onclick="abrirMenu()"><img src="https://i.ibb.co/54CsRmv/menu.png"></div>
+    </header>  
+
+<main>
+
+    <article>
+    <p>Postagem</p>
+    </article>
+    
+    <article>
+    <p>Postagem</p>
+    </article>
+
+    <article>
+    <p>Postagem</p>
+    </article>
+    
+    <article>
+    <p>Postagem</p>
+    </article>
+
+    <article>
+    <p>Postagem</p>
+    </article>
+
+    <article>
+    <p>Postagem</p>
+    </article>
+
+
+
+</main>
+
+</body>  
+<script>
+    let menu = document.querySelector('nav ul')  
+    let menuIcon = document.querySelector('menu-icon')
+  
+    function abrirMenu(){
+    menu.classList.toggle('open')    
+    }
+  </script>   
+</html>
