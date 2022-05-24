@@ -1,0 +1,46 @@
+@import 'base';
+$text-color: orange; 
+$text-size: 22pt;
+@mixin box-shadow (){
+    box-shadow: 3px 3px 4px 1px rgba( $text-color,0.6);
+}
+
+@mixin text-effect($val){
+    @if $val  = danger{
+    color: green;   
+    }
+    @else if $val = alert{
+    color: yellow;    
+    }
+    @else{
+    color: black;    
+    }
+}
+
+body{
+background-color: #7159c1;
+color:$text-color ;
+font-size: $text-size; 
+text-align: $text-align;
+}
+
+.container {
+@include box-shadow();
+width: 200px;
+height: 200px;
+background-color: white;
+$text-color2:white;
+color: white;    
+
+p{
+@include box-shadow();
+background-color: gray;
+width: 100px;
+height: 100px;
+color: blue;    
+@include text-effect(alert);
+}
+}
+
+
+

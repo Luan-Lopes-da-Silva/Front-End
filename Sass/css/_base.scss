@@ -1,0 +1,33 @@
+$text-align : center ;
+
+@for $i from 1 through 6{
+    .text-#{$i}{
+       font-size: 15px *$i; 
+    }
+}
+
+$colors: (color1:blue, color2:red, color3:yellow, color4:green, color5:black,color6:orange);
+@each $key , $color in $colors {
+    .#{$color}-text {color:$color;}
+}
+
+.flex{
+display: flex;
+align-items: center;    
+
+}
+
+body{
+@extend.flex;
+height: 100%;  
+flex-direction: column;  
+}
+
+p{
+color: red;
+cursor: pointer;    
+&:hover{
+color: blue;
+}
+}
+
