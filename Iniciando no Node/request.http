@@ -1,0 +1,32 @@
+POST http://localhost:4002/products
+Content-Type: application/json
+
+{
+  "name" : "Caneta azul" ,
+  "price" : 2.50
+}
+
+###
+
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/883632a5-a4ae-45eb-8faa-6bb69f582db9
+
+###
+
+PUT http://localhost:4002/products/2ad9aa59-7557-41ef-8b6a-9c86d3b4f6eb
+Content-Type: application/json
+
+{
+  "name" : "Caderno 200 folhas preto" ,
+  "price" : 20.00 
+}
+
+
+###
+DELETE  http://localhost:4002/products/29a1438c-96cc-46f8-8092-070d6892d263
+
+
