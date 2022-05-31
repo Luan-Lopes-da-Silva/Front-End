@@ -1,0 +1,58 @@
+header{
+display: flex;
+justify-content: space-between;
+align-items: center; 
+padding: 15px 28px 15px 24px; 
+
+h3{
+color: $red;
+font-size: 40px;
+font-weight: 700;    
+}
+
+nav{
+display: flex;   
+align-items: center;
+ul{
+display: flex;   
+li{
+padding: 16px;
+a{
+text-decoration: none;
+font-size: 30px;
+color: $black;
+font-weight: 700;
+
+&:hover{
+text-decoration: underline;    
+}
+} 
+} 
+}
+
+.buttons{
+display: flex; 
+margin-left: 24px;
+button{
+font-size: 18px;
+font-weight: 700;
+padding: 11px 12px;
+border-radius: 24px;
+display: flex;
+align-items: center;
+justify-content: center;    
+} 
+.login{
+background-color: $red;
+color: $white;    
+}
+.signup{
+background-color: $gray-light;
+color: $black;
+margin-left: 24px;
+}
+}
+}
+
+}
+
