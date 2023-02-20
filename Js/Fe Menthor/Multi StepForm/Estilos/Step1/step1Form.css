@@ -1,0 +1,104 @@
+.step1{
+  padding: 40px;
+}
+.step1 h1{
+  font-size: 3rem;
+  font-family: 'Ubuntu';
+  margin-bottom: 12px;
+  color: hsl(213, 96%, 18%);
+}
+
+.step1 p{
+  font-size: 1rem;
+  font-family: 'Ubuntu';
+  color:hsl(231, 11%, 63%);
+  margin-bottom: 30px;
+}
+.formInputs label{
+  display: inline-block;
+  font-family: 'Ubuntu';
+  color:hsl(213, 96%, 18%);
+  margin-bottom: 8px;
+  margin-top: 30px;
+}
+
+.formInputs input{
+  height: 40px;
+  width: 480px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid  hsl(229, 24%, 87%);
+}
+
+.formInputs input:focus{
+  border-color: hsl(243, 100%, 62%);
+  outline: none;
+}
+.formInputs .error{
+  display: inline-block;
+  color: red;
+  font-family: 'Ubuntu';
+  margin-left: 200px;
+}
+
+ .label:first-child span:nth-child(2){
+margin-left: 260px;
+}
+
+@media(max-width:550px){
+  .step1{
+    padding: 40px;
+    background-color: hsl(0, 0%, 100%);
+    width: max-content;
+    height: max-content;
+    margin-left: 25px;
+    border-radius: 20px;
+    position: absolute;
+    overflow-y: hidden;
+    margin-top: -50px;
+  }
+  .step1 h1{
+    font-size: 2rem;
+    font-family: 'Ubuntu';
+    margin-bottom: 12px;
+    color: hsl(213, 96%, 18%);
+  }
+  
+  .step1 p{
+    font-size: 1rem;
+    font-family: 'Ubuntu';
+    color:hsl(231, 11%, 63%);
+    margin-bottom: 0px;
+    width: 250px;
+    line-height: 1.7;
+  }
+  .formInputs label{
+    display: inline-block;
+    font-family: 'Ubuntu';
+    color:hsl(213, 96%, 18%);
+    margin-bottom: 8px;
+    margin-top: 20px;
+  }
+  
+  .formInputs input{
+    height: 40px;
+    width: 350px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid  hsl(229, 24%, 87%);
+  }
+  
+  .formInputs input:focus{
+    border-color: hsl(243, 100%, 62%);
+    outline: none;
+  }
+  .formInputs .error{
+    display: inline-block;
+    color: red;
+    font-family: 'Ubuntu';
+    margin-left: 90px;
+  }
+   .label:first-child span:nth-child(2){
+     margin-left: 150px;
+    }
+}

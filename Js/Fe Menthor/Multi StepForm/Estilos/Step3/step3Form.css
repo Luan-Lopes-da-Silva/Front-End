@@ -1,0 +1,136 @@
+.step3{
+  padding: 20px;
+  display: none;
+}
+.step3 h1{
+  font-size: 3rem;
+  font-family: 'Ubuntu';
+  margin-bottom: 12px;
+  color: hsl(213, 96%, 18%);
+}
+
+.step3 p{
+  font-size: 1rem;
+  font-family: 'Ubuntu';
+  color:hsl(231, 11%, 63%);
+  margin-bottom: 30px;
+}
+
+.step3 .add-on-item{
+display: flex;
+align-items: center;
+height: 100px;
+width: 500px;
+border-radius: 8px;
+border:2px solid hsl(243, 100%, 62%);
+margin-bottom: 8px;
+padding: 20px;
+}
+
+.step3 .add-on-item:hover{
+  cursor: pointer;
+}
+.step3 .add-on-item input{
+margin-right: 20px;
+appearance: none;
+}
+
+.step3 .add-on-item input::before{
+  display: flex;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsl(243, 100%, 62%);
+  border-radius: 4px;
+  transition: .3s;
+}
+
+.step3 .add-on-item input:hover::before{
+  cursor: pointer;
+}
+
+
+.step3 .add-on-item input:checked::before{
+   background: url('../../Imagens/icon-checkmark.svg');
+   background-color: hsl(243, 100%, 62%);
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.step3 .add-on-item h4{
+  color:hsl(213, 96%, 18%) ;
+  font-family: 'Ubuntu';
+}
+.step3 .add-on-item p{
+  margin-top: 8px;
+  margin-bottom: 0px;
+  color:hsl(229, 24%, 87%) ;
+  font-family: 'Ubuntu';
+}
+
+.cost1,
+.cost2,
+.cost3{
+  color:  hsl(243, 100%, 62%);
+}
+
+.cost1{
+  margin-left: 140px;
+}
+.cost2{
+  margin-left: 170px
+}
+
+.cost3{
+  margin-left: 120px
+}
+
+@media(max-width:550px){
+  .step3{
+    padding: 40px;
+    background-color: hsl(0, 0%, 100%);
+    width: max-content;
+    height: max-content;
+    margin-left: 10px;
+    border-radius: 20px;
+    position: absolute;
+    overflow-y: hidden;
+    margin-top: -50px;
+    margin-bottom: 100px;
+  }
+  .step3 h1{
+    font-size: 2rem;
+    font-family: 'Ubuntu';
+    margin-bottom: 12px;
+    color: hsl(213, 96%, 18%);
+  }
+  
+  .step3 p{
+    font-size: 1rem;
+    font-family: 'Ubuntu';
+    color:hsl(231, 11%, 63%);
+    margin-bottom: 30px;
+    width: 250px;
+    line-height: 1.5;
+  }
+  .step3 .add-on-item{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 380px;
+    border-radius: 8px;
+    border:2px solid hsl(243, 100%, 62%);
+    margin-bottom: 8px;
+    padding: 12px;
+    }
+    .cost1{
+      margin-left: 0px;
+    }
+    .cost2{
+      margin-left: 0px
+    }
+    
+    .cost3{
+      margin-left: 0px
+    }
+}

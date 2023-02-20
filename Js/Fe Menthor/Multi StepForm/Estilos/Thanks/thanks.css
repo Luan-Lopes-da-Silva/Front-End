@@ -1,0 +1,38 @@
+
+
+.thanks{
+  display: none;
+  width:600px;
+  height: 100%;
+  place-content: center;
+  margin-top: 150px;
+  place-self: center;
+  overflow: hidden;
+}
+.thanks h1{
+  font-family: 'Ubuntu';
+  color:hsl(213, 96%, 18%);
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+.thanks p{
+  text-align: center;
+  font-family: 'Ubuntu';
+  color: hsl(231, 11%, 63%);
+  width: 450px;
+  line-height: 1.7;
+}
+
+.thanks img{
+  margin-bottom: 20px;
+  margin: 20px auto;
+}
+
+@media (max-width:550px){
+  .thanks{
+    width: unset;
+    overflow: hidden;
+    height: unset;
+  }
+}

@@ -1,0 +1,178 @@
+.step4{
+  padding: 40px;
+  display: none;
+  width: max-content;
+}
+
+.plan-container{
+  background-color:  hsl(217, 100%, 97%);
+  padding: 12px;
+  border-radius: 8px;
+}
+.step4 h1{
+  font-size: 3rem;
+  font-family: 'Ubuntu';
+  margin-bottom: 12px;
+  color: hsl(213, 96%, 18%);
+}
+
+.step4 p{
+  font-size: 1rem;
+  font-family: 'Ubuntu';
+  color:hsl(231, 11%, 63%);
+  margin-bottom: 30px;
+}
+
+.plan-info{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  position: relative;
+  height:100px;
+  align-items: center;
+
+}
+
+.plan-info::after{
+position: absolute;
+content: '';
+display: block;
+width: 100%;
+height: 1px;
+background-color: hsl(229, 24%, 87%) ;
+bottom: 10%;
+}
+
+.planSelected{
+  color:hsl(213, 96%, 18%) ;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+}
+
+.planPrice{
+  color:hsl(213, 96%, 18%) ;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+.changePlan{
+  display: block;
+  background: transparent;
+  color: hsl(231, 11%, 63%);
+  margin-top: -30px;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+}
+
+.changePlan:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: 'Ubuntu';
+  font-weight: 700;
+}
+
+
+.plan-add-ons1,.plan-add-ons2,.plan-add-ons3{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  height: max-content;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.add-on-name,
+.add-on-name2,
+.add-on-name3
+{
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  color: hsl(231, 11%, 63%);
+}
+
+.add-on-price1,
+.add-on-price2,
+.add-on-price3{
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  color: hsl(213, 96%, 18%);
+  margin-left: 150px;
+}
+
+.total-cost{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.total-cost .total{
+  color:hsl(231, 11%, 63%) ;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+}
+.total-cost .total-price{
+  color: hsl(243, 100%, 62%) ;
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+@media(max-width:550px){
+  .step4{
+    padding: 12px;
+    background-color: hsl(0, 0%, 100%);
+    width: max-content;
+    height: max-content;
+    margin-left:12px;
+    border-radius: 20px;
+    position: absolute;
+    overflow-y: hidden;
+    margin-top: -50px;
+    margin-bottom: 100px;
+  }
+  .step4 h1{
+    font-size: 2rem;
+    font-family: 'Ubuntu';
+    margin-bottom: 12px;
+    color: hsl(213, 96%, 18%);
+  }
+  
+  .step4 p{
+    font-size: 1rem;
+    font-family: 'Ubuntu';
+    color:hsl(231, 11%, 63%);
+    margin-bottom: 30px;
+    width: 250px;
+    line-height: 1.5;
+  }
+  .planPrice{
+    color:hsl(213, 96%, 18%) ;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    margin-left:150px;
+    margin-top: 20px;
+  }
+  .plan-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+    margin-bottom: 12px;
+    align-items: center;
+  }
+  
+  .plan-info::after{
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: hsl(229, 24%, 87%) ;
+  bottom: 0%;
+  
+  }
+  .changePlan{
+    margin-top: 0px;
+  }
+}
