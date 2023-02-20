@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="Assets/favicon-32x32.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <nav>
+        <ul id="ul-menu">
+            <ul class="links">
+                <div id="menu"></div>
+                <img src="Assets/logo.svg" alt="logo-shop" id="logo">
+                <li>Collections</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </ul>
+        
+            <ul id="cart-container">
+                <img src="Assets/icon-cart.svg" alt="cart-icon" id="cart">
+                <span id="cart-count"></span>
+                <div class="cart-value">
+                    <h4>Cart</h4>
+                    <span id="separator"></span>
+                    <div class="cart-resume">
+                        <img src="Assets/image-product-1-thumbnail.jpg" alt="" id="img-product">
+                        <p class="product-name"></p>
+                        <div class="product-quantity">
+                            <span class="product-quantity-cart"></span>
+                            <span class="total-price"></span>
+                        </div>
+        
+                        <img src="Assets/icon-delete.svg" alt="" id="delete">
+                        <button>Checkout</button>
+                    </div>
+                    <h5 class="text">Your cart is empty</h5>
+                </div>
+                <img src="Assets/image-avatar.png" alt="avatar-profile" id="avatar">
+            </ul>
+            <span class="separator"></span>
+    </nav>
+
+    <main class="product">
+        <div class="col1">
+            <div class="main">
+                <img src="Assets/image-product-1.jpg" alt="image-product-1">
+            </div>
+            <div class="galery">
+                <img src="Assets/image-product-1.jpg" alt="image-product-1-thumbnail">
+                <img src="Assets/image-product-2.jpg" alt="image-product-3-thumbnail">
+                <img src="Assets/image-product-3.jpg" alt="image-product-3-thumbnail">
+                <img src="Assets/image-product-4.jpg" alt="image-product-4-thumbnail">
+            </div>
+        </div>
+        <div class="col2">
+            <div class="product-details">
+                <span class="shop">SNEAKER COMPANY</span>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            </div>
+            <div class="price-details">
+                <span class="price">$125.00</span>
+                <span class="sale">50%</span>
+                <span class="old-price">$250.00</span>
+            </div>
+            <div class="buy">
+                <div class="input">
+                    <span class="decrement">-</span>
+                    <span class="value">0</span>
+                    <span class="increment">+</span>
+                </div>
+                <button class="cart-btn">
+                    <img src="Assets/icon-cart2.svg" alt="cart-image" >
+                    <span>Add to cart</span>
+                </button>
+            </div>
+        </div>
+       
+    </main>
+    <div class="modal-img">
+        <span class="exit"></span>
+        <span class="prev"></span>
+        <span class="next"></span>
+        <img src="Assets/image-product-1.jpg" alt="" id="principal">
+        <div class="galery2">
+            <img src="Assets/image-product-1.jpg" alt="image-product-1-thumbnail">
+            <img src="Assets/image-product-2.jpg" alt="image-product-3-thumbnail">
+            <img src="Assets/image-product-3.jpg" alt="image-product-3-thumbnail">
+            <img src="Assets/image-product-4.jpg" alt="image-product-4-thumbnail">
+        </div>
+    </div>
+  
+</body>
+<script src="Scripts/script.js" type="module"></script>
+</html>
