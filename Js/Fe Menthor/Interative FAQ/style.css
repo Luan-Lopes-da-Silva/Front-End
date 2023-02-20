@@ -1,0 +1,167 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;  
+}
+
+body{
+  font-size: 12px;
+  font-family: Kumbh Sans;
+  background:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%) ) ;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.box{
+  width: 1100px;
+  height: 600px;
+  background-color: white;
+  border-radius: 15px;
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  position: relative;
+}
+
+.img{
+display: flex;
+align-items: center;
+overflow: hidden;
+
+}
+
+
+.faq{
+  width: 500px;
+  overflow: hidden;
+  
+}
+
+
+
+
+.faq h1{
+margin-top: 115px;
+}
+
+.faq dt{
+ color:  hsl(237, 12%, 33%);
+ margin-bottom: 5px;
+ margin-top: 5px;
+}
+
+.faq dt:hover{
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+.bold{
+  font-size: 13px;
+  color:hsl(240, 6%, 50%);
+  font-weight: bold;
+}
+
+.faq-item{
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.faq dd{
+  color:  hsl(240, 6%, 50%) ;
+  width: 320px;
+  grid-column: 1;
+  display: none;
+}
+
+#arrow-down{
+
+transform: rotate(0deg);
+transition:transform .4s;
+cursor: pointer;
+}
+
+#arrow-down.ativo {
+  transform: rotate(180deg);
+  
+}
+
+.dividers{
+  display: block;
+  width: 110%;
+  height: 1px;
+  background-color: hsl(240, 5%, 91%);
+  margin-top: 20px;
+  grid-column: 1;
+
+}
+
+
+#woman{
+  margin-left: -60px;
+}
+
+#box{
+ position: absolute;
+ left: -98px;
+ top: 250px;
+ overflow: visible;
+}
+
+@media(max-width:500px){
+  .box{
+    grid-template-columns: 1fr;
+    width: 450px;
+    height: max-content;
+    margin-top: 100px;
+}
+
+  .img{
+  display: grid;
+  place-items: center;
+  overflow: visible;
+  width: 450px;
+}
+  #woman{
+    width: 320px;
+    margin-top: -157px;
+    margin-left: 0px;
+  }
+  #box{
+    left: 40px;
+    top: -74px;
+    width: 140px;
+  }
+  .faq{
+    width: 450px;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    align-self: center;
+  }
+
+  .faq h1{
+    margin-top: 12px;
+  }
+  .faq-item{
+    width: 450px;
+    height: max-content;
+    margin-left: 50%;
+  }
+  .faq dd {
+    width: 240px;
+  }
+}
+
+
