@@ -1,0 +1,343 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body{
+ background: #F2F2F2; 
+ display: grid;
+ place-items: center;
+ width: 100%;
+ height: 100vh;
+ font-size: 1.125rem;
+ font-family: Space Grotesk;
+ overflow: hidden;
+}
+
+.container{
+  width: 1200px;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #FFFFFF;
+  position: relative;
+ 
+}
+.col1{
+width: 450px;
+height: 800px;  
+
+}
+.col2{
+width: 750px;
+height: 800px;
+margin-top:40%;
+margin-left: 40%;  
+}
+.bg{
+  width: 100%;  
+  height: 100%;
+}
+.card-front{
+position: absolute;
+left: 10%;
+top: 20%;
+width: 400px;
+}
+.card-back{
+position: absolute;  
+left: 20%;
+top: 52%;
+width: 400px;
+}
+.card-flag{
+ position: absolute;
+ left: 12%;
+ top: 22%; 
+}
+.form{
+width: 400px;
+width: max-content;
+}
+label{
+  display: block;
+}
+
+
+.form>input{
+  display: block;
+  width: 350px;
+  height: 38px;
+  border-radius: 5px;
+  border:solid 1px  hsl(270, 3%, 87%);
+  padding-left: 5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.form>input:focus{
+  outline: none;
+  border: solid 1px hsl(278, 94%, 30%);
+}
+
+
+
+
+#inputMM{
+  width: 80px;
+  display: inline;
+  
+}
+#inputYY{
+  width: 50px;
+  display: inline;
+}
+
+
+
+#card-front{
+font-size: 2rem;  
+border: none;
+background: transparent;
+position: absolute;
+top: 38%;
+left: 13%;
+color: white;
+}
+
+#card-back{
+ position: absolute;
+ top: 64.5%; 
+ left: 47%;
+ width: 50px;
+ border: none;
+ font-size: 1rem;
+ background: transparent;
+ color: white;
+}
+
+#cardfront-name{
+  position: absolute;
+  top: 44%; 
+  left: 13%;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#cardFront-MM{
+  position: absolute;
+  top: 44%;
+  right: 60%;
+  width: 30px;
+ background-color: transparent;
+  text-align: center;
+  border: none;
+  color: white;
+}
+#cardFront-YY{
+  position: absolute;
+  top: 44%;
+  right: 58%;
+  width: 30px;
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  color: white;
+}
+
+.cardImg::placeholder{
+ color: white; 
+}
+
+.botao{
+  width: 350px;
+  height: 40px;
+  margin-top: 12px;
+  border-radius: 5px;
+  border: none;
+  background-color:  hsl(278, 68%, 11%);
+  color: white;
+  cursor: pointer;
+  font-family: Space Grotesk;
+}
+
+.sucess{
+  display: none;
+  font-size: 0.850rem;
+  color: green;
+}
+
+.error{
+  display: none;
+  font-size: 0.850rem;
+  color: hsl(0, 100%, 66%);
+}
+.completed{
+  width: 100%;
+  height: 100% ;
+  text-align: center;
+  display: none;
+}
+
+.completed p{
+  color: hsl(279, 6%, 55%);
+  padding-top: 12px;
+  padding-bottom: 30px;
+}
+
+ h1{
+  padding-top: 20px;
+  color:  hsl(278, 68%, 11%);
+}
+
+@media (max-width:500px){
+  body{
+  width: 100%;
+  height: 100vh;  
+  overflow: hidden;
+  place-items: center;
+  }
+.container{
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+
+}
+.col1{
+  width: 100%;
+  height: 300px;
+  
+}
+.col2{
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 500px;
+  margin: 0%;
+  margin-top: 40px;
+  
+
+ }
+.card-front{
+  left: 5%;
+  top: 17%;
+  width: 350px;
+  z-index: 10;
+  }
+  .card-back{
+  left: 24%;
+  top: 5%;
+  width: 350px;
+  z-index: 9;
+  }
+  .card-flag{
+   left: 12%;
+   top: 20%; 
+   z-index: 12;
+  }
+  #card-front{
+    font-size: 1.6rem;  
+    border: none;
+    background: transparent;
+    top: 29%;
+    left: 13%;
+    color: white;
+    z-index: 13;
+    }
+    
+    #card-back{
+     top: 14.5%; 
+     left:80%;
+     width: 50px;
+     border: none;
+     font-size: 1rem;
+     background: transparent;
+     color: white;
+     z-index: 14;
+    }
+    
+    #cardfront-name{
+      top: 34%; 
+      left: 13%;
+      background: transparent;
+      border: none;
+      text-transform: uppercase;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      z-index: 15;
+    }
+    #cardFront-MM{
+      top: 34%;
+      left: 60%;
+      width: 30px;
+      background-color: transparent;
+      text-align: center;
+      border: none;
+      color: white;
+      z-index: 16;
+    }
+    #cardFront-YY{
+      top: 34%;
+      left: 65%;
+      width: 30px;
+      background-color: transparent;
+      text-align: center;
+      border: none;
+      color: white;
+      z-index: 17;
+    }
+    .form{
+      margin-top: 50px;
+    }
+  
+    .form>input{
+      width: 450px;
+      height: 45px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      }
+      
+      .form>input::placeholder{
+      font-size: 1.2rem;
+      padding: 5px;
+      }
+      #inputMM{
+      width: 80px;
+      }
+      #inputYY{
+        width: 80px;
+        margin-top: 8px;
+        margin-left: 8px;
+        
+      }
+      #cardCvc{
+        margin-top: 8px;
+        width: 150px;
+      }
+      .botao{
+        display: block;
+        width: 450px;
+        height: 60px;
+        font-size: 1.5rem;
+       margin-top: 40px;
+        margin-bottom: 60px;
+      }
+      .completed{
+        width: 100%;
+        height: 100% ;
+        text-align: center;
+        display: none;
+        margin-bottom: -70px;
+      }
+      .sucess{
+        width: max-content;
+      }
+      .error{
+        width: max-content;
+      }
+}

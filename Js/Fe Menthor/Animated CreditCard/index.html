@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Estilos/styles.css">
+  <link rel="shortcut icon" href="Imagens/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <title>Credit Card</title>
+</head>
+<body>
+  <main class="container">
+      <div class="col1">
+      <img class="bg" src="bg-main-desktop.png" alt="">
+      <img class="card-front" src="Imagens/bg-card-front.png" alt="">
+      <input type="text" name="cardname" id="card-front" placeholder="0000  0000  0000  0000" class="cardImg">
+      <img class="card-back" src="Imagens/bg-card-back.png" alt="">
+      <input type="text"  placeholder="000"  name="card-back" id="card-back" class="cardImg">
+      <input type="text" name="cardfront-name" id="cardfront-name" placeholder="Jane Appleseed" class="cardImg">
+      <input type="text" name="cardfront-MM" id="cardFront-MM" placeholder="00 /" class="cardImg">
+      <input type="text" name="cardfront-YY" id="cardFront-YY" placeholder="00" class="cardImg">
+      <img class="card-flag" src="Imagens/card-logo.svg" alt="">
+    </div>
+      <div class="col2">
+        <div class="form">
+       
+          <label for="cardName">CARDHOLDER NAME</label>
+          <div class="sucess"></div>
+          <div class="error"></div>
+          <input type="text" placeholder="e.g. Jane Appleseed" name="cardName" id="cardName" class="nameInput" length="2" maxlength="50">
+          <label for="cardNumber">CARD NUMBER</label>
+          <div class="sucess"></div>
+          <div class="error"></div>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" name="cardNumber" id="cardNumber" minlength="1" maxlength="19">
+          <label for="inputMM">EXP. DATE (MM/YY)</label>
+          <div class="sucess"></div>
+          <div class="error"></div>
+          <input type="text" placeholder="MM" name="inputMM" id="inputMM" minlength="1" maxlength="4">
+          <input type="text" placeholder="YY"  name="inputYY" id="inputYY" minlength="1" maxlength="2">
+          <div class="sucess"></div>
+          <div class="error"></div>
+          <label for="cardCvc">CVC</label>
+          <input type="text" placeholder="e.g. 123" name="cardCvc" id="cardCvc"  minlength="1" maxlength="3" >
+          <div class="completed">
+            <img src="Imagens/icon-complete.svg" alt="">
+            <h1>THANK YOU !</h1>
+            <p>We've added your card details</p>
+          </div>
+          <button class="botao" id="btn"><p>Confirm</p></button>
+     
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="validate.js"></script>
+<script src="script.js"></script>
+
+
+</html>
