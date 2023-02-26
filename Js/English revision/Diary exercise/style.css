@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+label{
+  display: block;
+}
+
+.quiz-container{
+  display: grid;
+  justify-content: center;
+  padding: 200px;
+}
+
+input{
+  padding: 2px;
+  border-radius:8px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 12px;
+}
+input[type=radio]{
+  margin-top: 4px;
+}
+
+button{
+  margin-top: 12px;
+  padding: 12px 34px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.data{
+  color: blue;
+}
