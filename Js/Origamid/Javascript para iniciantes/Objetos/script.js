@@ -28,8 +28,15 @@ console.log(carro.preco)
 var dog = {
 race :  'Labrador',
 color : 'Black',
-barksTheSeeAMan : true,
+age: 10,
+barks(genre){
+  if(genre === 'man'){
+    return `Dog barks the see a man`
+  }else{
+    return `Dog not barks`
+  }
+}
 }
 
-console.log(dog)
+console.log(dog.barks('woman'))
 
