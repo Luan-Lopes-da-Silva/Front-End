@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans';
+}
+
+main{
+  padding: 20px;
+ 
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.count{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.count span{
+  background-color: blue;
+  padding: 2px;
+  width: 24px;
+  text-align: center;
+  border-radius: 4px;
+  color: hsl(0, 0%, 100%);
+}
+
+header p{
+  color:  hsl(219, 12%, 42%);
+}
+
+.notification{
+  background-color: red;
+  border-radius: 8px;
+  padding:24px;
+  margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  margin-top: 20px;
+  width: 700px;
+}
+
+.notification img{
+  width: 60px;
+}
+
+.name,
+.info,
+.post,
+.group{
+ display: inline;
+}
+.time{
+  display: block;
+}
+.pin{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.message p{
+  width: 530px;
+  margin-left: 80px;
+  border: 1px solid black;
+  padding: 12px;
+}
+
+
+
