@@ -36,7 +36,8 @@ let index = arr.indexOf("Luan")
 console.log(index)
 
 //Slice
-//Slice one array based in two arguments, one index which indicates the start of slice and other index which indicates the end of slice this second index is optional.
+//Slice one array based in two arguments, one index which indicates the start of slice 
+//and other index which indicates the end of slice this second index is optional.
 const halfOfArray = arr.slice(0,4)
 console.log(halfOfArray)
 const secondHalf = arr.slice(-3)
