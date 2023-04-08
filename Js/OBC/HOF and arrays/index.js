@@ -54,3 +54,17 @@ const genres = persons.reduce(function(accumulatedValue,person){
 },{})
 
 console.log(genres)
+
+
+//Sort
+persons.sort(function(a,b){
+return a.age-b.age
+})
+//This method sort modify the original array.
+//The method return one number positive or negative basically true or false if the number be positive he go to place the number before in order and case if the number be negative he go to place the number  after in order
+console.log(persons)
+
+//Method for use sort without modify the original array
+//const orderedPerson = persons.slice().sort(function(a,b){
+//return a.age-b.age
+//})
