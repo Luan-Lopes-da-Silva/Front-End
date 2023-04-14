@@ -1,44 +1,51 @@
 let menuInterative = ''
+let acelerateReturn = ''
+let desacelerateReturn = ''
 
-
-  function showMenu(){
+do{
   menuInterative = prompt(
-  'Interative Menu'+
-  '\na)Acelerate Ship'+
-  '\nb)Desacelerate Ship'+
-  '\nc)Print datas of board'+
-  '\nd)Exit'
-  )
-  }
+    'Interative Menu'+
+    '\na)Acelerate Ship'+
+    '\nb)Desacelerate Ship'+
+    '\nc)Print datas of board'+
+    '\nd)Exit'
+    
+    )
+    switch(menuInterative){
+      case 'a':
+      acelerate()
+      break
+      case 'b':
+      desacelerate()
+      break
+      case 'c':
+      printDatas()
+      break
+      case 'd':
+      alert('Exiting of app....')
+      break
+      default:
+      alert('Invalid option')
+      break
+      }
+      }while(menuInterative!=='d')
 
 
-  showMenu();
-  switch(menuInterative){
-  case 'a':
-  acelerate()
-  case 'b':
-  desacelerate()
-  case 'c':
-  printDatas()
-  case 'd':
-  alert('Exiting of app....')
-  break
-  default:
-  alert('Invalid option')
-  break
-  }
 
   function acelerate(){
   let velocity = parseFloat(prompt('The which speed you wishes to leave?'))
   let acelerate = parseFloat(prompt('The which speed you wishes speed up?'))
-  alert(
+  const messageAcelerate = alert(
     '\nYour initial velocity it was ' + velocity + 
     '\nYou wanted speed up for ' + acelerate + 
     '\nand your final speed was '  + (velocity+acelerate)
     )
-  
+  return acelerateReturn = 'Your initial velocity it was ' + velocity + 
+  '\nYou wanted speed up for ' + acelerate + 
+  '\nand your final speed was ' + (velocity+acelerate)
   }
 
+  
   function desacelerate(){
     let velocity = parseFloat(prompt('The which speed you wishes to leave?'))
     let desacelerate = parseFloat(prompt('The which speed you wishes slow down?'))
@@ -47,13 +54,19 @@ let menuInterative = ''
       '\nYou wanted slow down for ' + desacelerate + 
       '\nand your final speed was '  + (velocity-desacelerate)
     )
-    const finalVelocityDesacelerate = velocity-desacelerate
-    showMenu()
-    return finalVelocityDesacelerate
+
+    return desacelerateReturn = 'Your initial velocity it was ' + velocity + 
+    '\nYou wanted slow down for ' + desacelerate + 
+    '\nand your final speed was ' + (velocity-desacelerate)
   }
 
   function printDatas(){
-  console.log(desacelerate())
+  alert(
+    'In first process we collect the following datas\n' + acelerateReturn 
+  )
+  alert(
+    'For last in second process we collect the following datas\n' + desacelerateReturn
+  )
   }
 
 
