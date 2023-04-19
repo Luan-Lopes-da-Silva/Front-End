@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working with forms</title>
+</head>
+<body>
+  <h1>Working with forms</h1>
+  <hr>
+
+  <h2>Assemble order</h2>
+
+  <form id="orderForm">
+    <label for="name">Name:</label>
+    <br>
+    <input type="text" name="name" id="name">
+    <br><br>
+
+    <label for="address">Address of delivery:</label>
+    <br>
+    <input type="text" name="address" id="address">
+    <br><br>
+
+    <label for="breadType">Type of bread</label>
+    <br>
+    <select name="breadType" id="breadType">
+      <option selected disabled>Select a option...</option>
+      <option value="3 queijos">3 cheese</option>
+      <option value="Parmesão e orégano">Parmesan and oregano</option>
+      <option value="9 grãos">9 grains</option>
+      <option value="Italiano branco">White italian</option>
+      <option value="Granola salgada">Salty granola</option>
+      <option value="Manteiga temperada">Tempered butter</option>
+    </select>
+    <br><br>
+
+    <label for="main">Main:</label>
+    <br>
+    <input type="radio" name="main" id="main1" value="Carne">
+    <label for="main1">Meat</label>
+    <input type="radio" name="main" id="main2" value="Frango">
+    <label for="main2">Fowl</label>
+    <input type="radio" name="main" id="main3" value="Vegano">
+    <label for="main3">Vegan</label>
+    <br><br>
+
+    <label for="salad">Salad:</label>
+    <br>
+    <input type="checkbox" name="salad" id="salad1" value="Alface">
+    <label for="salad1">Lettuce</label>
+    <input type="checkbox" name="salad" id="salad2" value="Tomate">
+    <label for="salad2">Tomatoes</label>
+    <input type="checkbox" name="salad" id="salad3" value="Azeitonas">
+    <label for="salad3">Olives</label>
+    <input type="checkbox" name="salad" id="salad4" value="Cenoura">
+    <label for="salad4">Carrot</label>
+    <input type="checkbox" name="salad" id="salad5" value="Picles">
+    <label for="salad5">Pickles</label>
+    <br><br>
+
+    <label for="observations">Observations:</label>
+    <br>
+    <textarea name="observations" id="observations" cols="30" rows="6"></textarea>
+    <br><br>
+
+    <button type="submit">Close order</button>
+  </form>
+</body>
+<script src="index.js"></script>
+</html>
