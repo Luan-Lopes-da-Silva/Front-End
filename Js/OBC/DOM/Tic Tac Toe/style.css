@@ -159,3 +159,18 @@ border-right: 0;
   color: #023047 ;
   background-color:#8ecae6 ;
 }
+
+.score1,
+.score2{
+  font-size: 2rem;
+  font-family: 'Ubuntu';
+}
+
+.score1{
+  color: #a7c957;
+  margin-right: 95px;
+}
+
+.score2{
+  color: #e76f51;
+}
