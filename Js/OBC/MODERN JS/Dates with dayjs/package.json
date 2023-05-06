@@ -1,0 +1,14 @@
+{
+  "name": "dates-with-dayjs",
+  "version": "1.0.0",
+  "description": "Dates with day js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luan",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
+}
