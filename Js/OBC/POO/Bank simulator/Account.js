@@ -1,11 +1,14 @@
 const Deposit = require("./Deposit")
 const dayJs = require("dayjs")
 const Loan = require("./Loan")
+const Transfer = require("./Transfer")
+const User = require("./User")
 
 module.exports = class Account {
   #balance
-  constructor(balance){
-    this.#balance = balance
+  constructor(user){
+    this.#balance = 0
+    this.owner = user
     this.deposits = []
     this.loans = []
     this.transfers = []
@@ -15,20 +18,23 @@ module.exports = class Account {
     return this.#balance
   }
 
-  deposit(value){
-  this.#balance+= value
-  const deposit = new Deposit(value,dayJs().format('DD/MM/YYYY'))
+  addDeposit(deposit){
+  this.#balance+= deposit.value
   this.deposits.push(deposit)
   }
-  loan(value,numberOfInstalments,situation){
-    this.#balance+= value
-    const loan = new Loan(value,numberOfInstalments,situation,dayJs().format('DD/MM/YYYY'))
+  addLoan(loan){
+    this.#balance+= loan.value
     this.loans.push(loan)
   }
-  transfer(value){
-    this.#balance+= value
-    const loan = new Loan(value,numberOfInstalments,situation,dayJs().format('DD/MM/YYYY'))
-    this.loans.push(loan)
+  addTransfer(transfer){
+    if(transfer.toUser.email === this.owner.email){
+      this.#balance += transfer.value
+      this.transfers.push(transfer)
+    }else if(transfer.fromUser.email === this.owner.email){
+      this.#balance-=transfer.value
+      this.transfers.push(transfer)
+
+    }
   }
 }
 

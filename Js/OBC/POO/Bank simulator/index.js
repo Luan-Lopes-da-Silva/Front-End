@@ -1,14 +1,13 @@
-const Account = require("./Account");
-const Deposit = require("./Deposit");
-const Loan = require("./Loan");
+const App = require("./App")
 
+App.createUser('lopesluan18@outlook.com','Luan Lopes')
+App.createUser('lulamolusculo2009@hotmail.com','Luan Silva')
 
-const account = new Account(400)
-console.log(account.balance)
-account.deposit(400)
-account.deposit(800)
-account.loan(400,8,'Pagamento não iniciado')
-account.loan(600,8,'Pagamento não iniciado')
-console.log(account.balance)
-console.log(account.deposits)
-console.log(account.loans)
+App.deposit('lopesluan18@outlook.com',600)
+
+App.transfer('lopesluan18@outlook.com','lulamolusculo2009@hotmail.com',100)
+App.takeLoan('lopesluan18@outlook.com',600,24)
+
+console.log(App.findUser('lopesluan18@outlook.com').account)
+console.log(App.findUser('lulamolusculo2009@hotmail.com').account)
+console.log(App.findUser('lopesluan18@outlook.com').account.loans[0].installments.status)

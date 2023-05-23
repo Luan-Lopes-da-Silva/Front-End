@@ -1,19 +1,28 @@
+const dayjs = require("dayjs")
 const Installment = require("./Installment")
 
 
-module.exports = class Loan extends Installment{
-  constructor(value,numberOfInstalments,situation,creatAt,installmentPrice){
-    super(value,numberOfInstalments,situation)
-    this.creatAt = creatAt
-    this.installmentPrice = value/numberOfInstalments
+module.exports = class Loan{
+  static #fee = 1.05
+
+  constructor(value,installments){
+  this.value = value
+  this.installments=[]
+  for(let i = 1; i<=installments; i++){
+    this.installments.push(new Installment((value*Loan.#fee)/installments,i))
   }
-  static #tax = 0
-  get tax(){
-    return Loan.#tax
+  this.createdAt = dayjs().format('DD/MM/YYYY')
   }
-  set tax(percentage){
-    return (Loan.#tax * 100) / percentage
+
+  static get fee(){
+  return Loan.#fee
   }
+
+  static set fee(newFeePercentage){
+  Loan.#fee = 1 + (newFeePercentage/100)  
+  }
+ 
+  
  
 }
 

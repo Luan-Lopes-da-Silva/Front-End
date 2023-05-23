@@ -1,9 +1,11 @@
+const dayjs = require("dayjs");
 const Deposit = require("./Deposit");
 
-module.exports = class Transfer extends Deposit{
-  constructor(sender,receiver,value,creatAt){
-    super(value,creatAt)
-    this.sender = sender
-    this.receiver = receiver
+module.exports = class Transfer {
+  constructor(fromUser,toUser,value){
+    this.fromUser = fromUser
+    this.toUser = toUser
+    this.value = value
+    this.createdAt = dayjs().format('DD/MM/YYYY')
   }
 }
