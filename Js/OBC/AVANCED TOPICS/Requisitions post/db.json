@@ -1,0 +1,34 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Olá, mundo!",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "Isaac"
+    },
+    {
+      "id": 2,
+      "title": "Requisições POST com Javascript",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "Isaac"
+    },
+    {
+      "title": "Minha primeira requisição",
+      "author": "Luan",
+      "content": "Olá programador",
+      "id": 3
+    },
+    {
+      "title": "Olá",
+      "author": "Luan",
+      "content": "Minha segunda Requisição",
+      "id": 4
+    },
+    {
+      "title": "3",
+      "author": "3 ",
+      "content": "3",
+      "id": 5
+    }
+  ]
+}

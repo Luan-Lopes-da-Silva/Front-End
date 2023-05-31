@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+  margin: 20px;
+}
+
+.card{
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: black;
+  color: #fff;
+  margin: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.card h2{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card img{
+  width: 100px;
+  object-fit: cover;
+}

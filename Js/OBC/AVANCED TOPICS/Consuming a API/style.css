@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 20px;
+}
+
+#container{
+  display: flex;
+  margin-top: 12px;
+  gap: 40px;
+}
+
+label{
+  display: block;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+input{
+  padding: 4px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+button{
+  display: block;
+  margin-top: 12px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+}
+
+#finances{
+  display: flex;
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.finance{
+  display: grid;
+  place-items: center;
+  background-color: aqua;
+  width: 200px;
+  height: 100px;
+  border-radius: 8px;
+  font-family:'Roboto';
+}
