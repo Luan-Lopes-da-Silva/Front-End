@@ -1,9 +1,14 @@
 {
-  "finances": [
+  "transactions": [
     {
-      "name": "Light bill",
-      "value": "250,00",
-      "id": 1
+      "name": "Gift",
+      "amount": -0.1,
+      "id": 2
+    },
+    {
+      "name": "Wage",
+      "amount": 5000,
+      "id": 3
     }
   ]
 }
