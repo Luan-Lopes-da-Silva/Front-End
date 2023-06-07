@@ -4,7 +4,6 @@ function spaceShip(name:string,captain:string){
     captain,
     speed:20,
     inMission:true,
-    crew:[]
   }
   alert(`The ship ${spaceShip.name} commanded by the captain ${spaceShip.captain} was send in a mission`)
   
