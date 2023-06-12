@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 20px;
+}
+
+h1{
+  margin-bottom: 20px;
+}
+
+label{
+  display: block;
+  margin-bottom: 4px;
+}
+
+input{
+padding: 4px 12px;
+border-radius: 4px;
+outline: none;
+border: 2px solid black;
+}
+
+button{
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 60px;
+  padding: 6px 24px;
+  cursor: pointer;
+}
+
+.user-container{
+  display: flex;
+  flex-direction: column;
+}
+
+span{
+  margin-top: 4px ;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: underline;
+  color: blue;
+  transition: .3s;
+  width: max-content;
+  padding: 4px;
+}
+
+a:hover{
+  color: black;
+}
+
