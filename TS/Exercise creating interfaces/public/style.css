@@ -6,6 +6,7 @@
 
 body{
   padding: 20px;
+  overflow-x: hidden;
 }
 
 h1{
@@ -52,5 +53,37 @@ a{
 
 a:hover{
   color: black;
+}
+h2{
+  display: block;
+}
+.container-users{
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  gap:100px;
+
+}
+
+.user-container{
+  margin-top: 20px;
+  background-color: beige;
+  border-radius: 4px;
+  padding: 12px;
+gap: 40px;
+}
+
+div{
+  width: max-content ;
+}
+
+.forms{
+  display: flex;
+  gap: 40px;
+}
+
+.description,
+.name,
+.bio{
+width: 200px;
 }
 
