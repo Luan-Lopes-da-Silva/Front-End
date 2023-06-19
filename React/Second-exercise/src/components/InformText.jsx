@@ -1,0 +1,3 @@
+export default function InformText () {
+  return <h2>O terceiro capítulo da nova trilogia de George Lucas começa quase no final das Guerras Clônicas. Depois de três anos de violento conflito, o Conselho Jedi envia Obi-Wan Kenobi (Ewan McGregor) para capturar o General Grievous, o mortífero líder dos exércitos separatistas e levá-lo à justiça. Enquanto isso, em Coruscant, o Chanceler Palpatine (Ian McDiarmid) ganhou ainda mais poder. Suas mudanças políticas transformaram a enfraquecida República no poderoso Império Galáctico e ele revela ao seu aliado mais próximo, Anakin, a natureza de seu poder e os segredos da Força, numa tentativa de atrair o jovem ao lado negro.</h2>
+} 
