@@ -1,0 +1,15 @@
+$bg-color:#f00;
+$first-width:100px;
+$second-width:80px;
+
+.btn1{
+background-color: $bg-color;
+width: $first-width;
+height: 30px;  
+}
+
+.btn2{
+background-color: $bg-color;
+width: $second-width;
+height: 20px; 
+}

@@ -1,0 +1,22 @@
+.square{
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  .square2{
+    width: 180px;
+    height: 180px;
+    background-color: green;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    .square3{
+      width: 160px;
+      height: 160px;
+      background-color: black;
+      border-radius: 4px;
+    }
+  }
+}
