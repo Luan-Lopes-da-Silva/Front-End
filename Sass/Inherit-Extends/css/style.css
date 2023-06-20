@@ -1,0 +1,19 @@
+.btn, .btn-blue {
+  width: 125px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.btn.btn-purple, .btn-purple.btn-blue {
+  background-color: purple;
+  color: red;
+}
+.btn.btn-yellow, .btn-yellow.btn-blue {
+  background-color: yellow;
+}
+
+.btn-blue {
+  background-color: blue;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
