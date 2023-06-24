@@ -1,0 +1,34 @@
+.btns{
+  button{
+    display: block;
+    margin: 12px auto;
+  }
+}
+
+.flBtn{
+width: max-content;
+padding: 8px 36px;
+border-radius: 8px;
+background-color: #023e8a;
+color: #FFF;
+transition: .4s;
+margin-top: 12px;
+border: 2px solid #0077b6;
+ &:hover{
+  background-color: #03045e;
+  scale: 1.2;
+  cursor: pointer;
+ }
+}
+
+.medBtn{
+  width: max-content;
+  padding: 8px 36px;
+  background: linear-gradient(to right, #023e8a,#0096c7);
+  border-radius: 8px;
+  border: 2px solid #0077b6;
+  color: #fff;
+  &:hover{
+    cursor: pointer;
+  }
+}
