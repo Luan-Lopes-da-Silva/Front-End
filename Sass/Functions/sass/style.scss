@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@function background-color($background){
+@if(lightness($background) > 50){
+  @return black
+}@else{
+  @return white
+}
+}
+
+@mixin background-mix($color-bg){
+  background-color: $color-bg;
+  color: background-color($color-bg);
+}
+
+.title{
+  height: 100vh;
+  @include background-mix(gray)
+}
+  
