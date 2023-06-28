@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../assets/Fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoReg';
+  src: url(../assets/Fonts/Roboto/Roboto-Regular.ttf);
+}
+
+.container{
+width: 350px;
+height: max-content;
+background-color:  hsl(0, 0%, 100%) ;
+padding: 40px;
+border-radius: 20px;
+}
+
+.span{
+  color: hsl(234, 29%, 20%);
+  font-family: 'RobotoBold';
+}
+
+.button{
+width: 100%;
+padding: 12px;
+border: none;
+border-radius: 8px;
+background-color:  hsl(234, 29%, 20%);
+color: hsl(0, 0%, 100%);
+font-family: 'RobotoBold';
+margin-bottom: 20px;
+}
+
+.button:hover{
+  background:linear-gradient(to right,#FF9247,#FA4B75);
+  cursor: pointer;
+}
+
+.h1{
+  width: 200px;
+  color:hsl(234, 29%, 20%) ;
+  font-family: 'RobotoBold';
+}
+
+.text{
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: hsl(235, 18%, 26%);
+  font-family: 'RobotoReg';
+}

@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'RobotoReg';
+  src: url(../assets/Fonts/Roboto/Roboto-Regular.ttf);
+}
+
+.container{
+  width: max-content;
+  display: flex;
+  gap: 12px;
+  font-family: 'RobotoReg';
+  align-items: center;
+  grid-column: 1;
+}
+
+.container img{
+width: 20px;
+}
+
+.span{
+  color:hsl(235, 18%, 26%) ;
+  padding: 12px;
+}
