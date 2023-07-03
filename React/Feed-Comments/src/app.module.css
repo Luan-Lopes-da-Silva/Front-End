@@ -1,0 +1,65 @@
+.container{
+  background-color: #caceca;
+  width: max-content;
+  height: max-content;
+  margin: auto auto;
+  padding: 40px;
+}
+
+.h1{
+  color: #000;
+}
+
+.label,.button{
+display: block;  
+}
+
+.label{
+margin: 8px 0px;
+}
+
+.button{
+margin: 20px 0px;
+width: 100%;
+padding: 12px 24px;
+}
+
+.button:hover{
+cursor: pointer;
+}
+
+.input{
+padding: 8px 24px;
+width: 400px;
+margin-bottom: 12px;
+}
+
+.textarea{
+  background-color: #fff;
+  color: #000;
+  width: 424px;
+  padding:12px;
+
+}
+
+.form{
+  border-bottom: 2px solid #fff;
+}
+
+.comentContainer{
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.comentContainer span{
+  display: block;
+  margin-bottom: 8px;
+}
+
+.comentContainer span:nth-child(1){
+  font-weight: bold;
+}
+
+p{
+  font-size: 1.2rem;
+}
