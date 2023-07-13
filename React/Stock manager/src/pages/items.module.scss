@@ -1,0 +1,42 @@
+.nav{
+  display: flex;
+  background-color: #1C1A1D;
+  color: #FFF;
+  width: 100%;
+ justify-content: space-between;
+  padding: 12px;
+  font-weight: bold;
+}
+.item{
+padding: 12px;
+margin: 20px 0px;
+color: #FFF;
+ul{
+  width: 100%;  
+}
+li{
+display: flex;
+justify-content: space-between;
+button{
+padding: 6px 16px; 
+border-radius: 4px;
+border: none;
+margin-bottom: 24px; 
+gap: 12px;
+margin-left: 12px;
+a{
+color:#000; 
+}
+&:hover{
+  cursor: pointer;  
+  }
+}
+& button:nth-child(1){
+background-color: #5BA7FD;  
+}
+& button:nth-child(3){
+  background-color: #FF5258;  
+}
+
+}
+}

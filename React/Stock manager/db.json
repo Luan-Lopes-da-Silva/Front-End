@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "name": "Teclado",
+      "quantity": "12",
+      "price": "500.00",
+      "category": "Acessorios",
+      "description": "Teclado Mecanico",
+      "createdAt": "12/07/2023, 15:28:48",
+      "id": 1
+    },
+    {
+      "name": "Led monitor",
+      "quantity": "4",
+      "price": "500.00",
+      "category": "Acessorios",
+      "description": "Barra de led para monitor",
+      "createdAt": "12/07/2023, 15:32:34",
+      "id": 2
+    },
+    {
+      "name": "Led monitor",
+      "quantity": "4",
+      "price": "500.00",
+      "category": "Acessorios",
+      "description": "Barra de led para monitor",
+      "createdAt": "12/07/2023, 15:33:20",
+      "id": 3
+    }
+  ]
+}
