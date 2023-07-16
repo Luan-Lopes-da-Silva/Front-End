@@ -7,7 +7,6 @@ const sumItems = totalItems.reduce((acc,cur)=>{
 return acc+parseFloat(cur)  
 },0)
 const finishingItems = products.products.filter(p=>p.quantity<5)
-console.log(finishingItems)
 
   return(
     <div>
@@ -19,11 +18,20 @@ console.log(finishingItems)
       </div>
       <div className={style.count}>
       <span>Inventario total</span>
-      <h1>{sumItems}</h1>
+      {isNaN(sumItems)?(
+        <h1>0</h1>
+      ):(
+        <h1>{sumItems}</h1>
+      )}
+    
       </div>
       <div className={style.count}>
       <span>Itens recentes</span>
+      {isNaN(sumItems)?(
+      <h1>0</h1>  
+      ):(
       <h1>{products.products.length}</h1>
+      )}
       </div>
       <div className={style.count}>
       <span>Itens acabando</span>
@@ -32,26 +40,25 @@ console.log(finishingItems)
       </div>
       <div className={style.flex}>
       <div>
+      <div>
+      <div>
       <nav className={style.nav}>
         <li>Itens Recentes</li>
         <li>Ações</li>
       </nav>
-        <div className={style.item}>
-        <ul>
-     {products.products.map((product)=>(
-     <li key={product.id}>
-      <span>{product.id}</span>
-     <span>{product.name}</span>
-     <span>{product.quantity} unid</span>
-     <span>{product.category}</span>
-     <div>
-     <Link to={`/items/${product.id}`}> <button>Ver</button></Link>
-  
-     </div>
-     </li> 
-     ))}
-    </ul>
+      {isNaN(sumItems)?(null):(
+        <div>
+        {products.products.map((product)=>(
+        <div key={product.id} className={style.item}>
+        <span>{product.name}</span>
+        <Link to={`/items/${product.id}`}><button>Ver</button></Link>
+        </div>  
+        ))}
         </div>
+      )}  
+     
+      </div>
+      </div> 
       </div>
       <div>
       <div>
@@ -61,17 +68,15 @@ console.log(finishingItems)
         <li>Qtd</li>
         <li>Ações</li>
       </nav>  
-      <div>
+      <div >
       {finishingItems.map((finish)=>(
-      <div key={finish.id}>
+      <div key={finish.id} className={style.item}>
       <span>{finish.name}</span>
       <span>{finish.quantity}</span>
       <Link to={`/items/${finish.id}`}><button>Ver</button></Link>
       </div>  
       ))}
       </div>
-       
-    
       </div>
       </div> 
       </div>

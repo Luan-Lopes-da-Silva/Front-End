@@ -1,16 +1,10 @@
-import useCategory from '../hooks/useCategory'
-import useDescription from '../hooks/useDescription'
-import useName from '../hooks/useName'
-import usePrice from '../hooks/usePrice'
-import useQuantity from '../hooks/useQuantity'
+import { useContext } from 'react'
 import style from './newitem.module.scss'
-
+import ProductContext from '../contexts/ProductContext'
 export default function NewItem(){
-const {name,setName} = useName()
-const {quantity,setQuantity} = useQuantity()
-const {price,setPrice} = usePrice()
-const {category,setCategory} = useCategory()
-const {description,setDescription} = useDescription()
+const {name,setName,quantity,setQuantity,price,setPrice,category,setCategory,description,setDescription} = useContext(ProductContext)
+const date = new Date().toLocaleString('pt-br') 
+const id = Math.floor(Math.random()*1000000) 
 async function createProduct(ev){
 ev.preventDefault()
   const product ={
@@ -19,7 +13,8 @@ ev.preventDefault()
   price,
   category,
   description,
-  createdAt: new Date().toLocaleString('pt-br')  
+  createdAt: date,
+  id
 }
 
 const response = await fetch('http://localhost:3000/products',{
@@ -29,10 +24,16 @@ headers:{
 },
 body:JSON.stringify(product)  
 })
-response
+response.ok
+setName('')
+setQuantity('')
+setPrice('')
+setDescription('')
+setCategory('')
 }
+
 return(
-<div>
+  <div>
   <form
   id='form' 
   className={style.form}
