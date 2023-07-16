@@ -1,14 +1,3 @@
 {
-  "products": [
-    {
-      "name": "Mouse Razer",
-      "quantity": "12",
-      "price": "150.00",
-      "category": "Acessorios",
-      "description": "Mouse Razer DeathAdder 1200DPI.",
-      "createdAt": "15/07/2023, 08:45:02",
-      "updated": "15/07/2023, 08:46:06",
-      "id": 198116
-    }
-  ]
+  "products": []
 }

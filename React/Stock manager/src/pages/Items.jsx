@@ -9,7 +9,7 @@ const containerId = parseFloat(container.id)
 
 if(containerId){
   const response =  await fetch(`http://localhost:3000/products/${containerId}`,{
-  method:'PUT',
+  method:'DELETE',
   headers:{
     "Content-Type": "application/json"  
   },
