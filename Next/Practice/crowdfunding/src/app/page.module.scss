@@ -1,0 +1,155 @@
+.container{
+ background-color: 	hsl(0, 0%, 98%);
+ 
+  .nav{
+    width: 100%;
+    height: 400px;
+    padding: 12px 200px;
+    background-image: url('../../public/image-hero-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    nav{
+    display: flex;
+    justify-content: space-between;
+    ul{
+      display: flex;
+      gap: 20px;
+    li{
+      color: #fff;
+    }  
+    }  
+    }
+    }
+    p,h6{
+    color: 	hsl(0, 0%, 58%);  
+    }
+    .firstCard{
+    margin: auto auto;
+    margin-top: -50px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 232px;
+    text-align: center;
+    padding-top: 40px;
+    background-color: 	hsl(0, 0%, 100%);
+    border-radius: 8px;
+    position: relative;
+    .logo{
+    position: absolute;
+    top: -28px;
+    left: 45%;  
+    }
+    h1{
+    margin-bottom: 12px; 
+    } 
+    .buttons{
+     width: 100%;
+     display: flex;
+     padding: 0px 50px;
+     justify-content: space-between;
+      margin-top: 40px;
+      button{
+        width: 150px;
+        padding: 12px 24px;
+        border-radius: 24px;
+        border: none;
+        background-color: hsl(176, 50%, 47%);
+        color: 	hsl(0, 0%, 100%);
+        &:hover{
+        cursor: pointer;
+        }
+      }
+      .btnCustom{
+      position: relative;
+      padding: 24px 24px;
+      display: flex;
+      align-items: center;
+      width: 150px;
+      background-color: hsl(0, 0%, 91%);
+      border-radius: 24px;
+      &:hover{
+        cursor: pointer;
+      }
+      span{
+      position: absolute;
+      right: 16px;
+      color: 	hsl(0, 0%, 58%);  
+      }
+      img{
+      position: absolute;
+      left: 0;  
+      }  
+      } 
+    } 
+    }
+    .secondCard{
+      margin: auto auto;
+      margin-bottom: 24px;
+      width: 700px;
+      height: 200px;
+      text-align: center;
+      padding: 0px 12px;
+      background-color: 	hsl(0, 0%, 100%);
+      border-radius: 8px;
+      .collumnsContainer{
+      display: flex;
+      margin-bottom: 12px;  
+      div{
+        padding: 12px 20px; 
+        margin-top: 40px;  
+      }
+      .collumn{  
+        border-right: 1px solid black;
+        height: max-content;
+      }
+      }
+    
+      .progress{
+      width: 100%;
+      height: 12px;
+      background-color: hsl(0, 0%, 96%);
+      display: block;
+      border-radius: 12px;
+      position: relative;
+      &::after{
+      content: '';
+      display: block;
+      width: 60%;
+      height: 12px;
+      background-color: hsl(176, 50%, 47%);
+      border-radius: 12px;
+      border: none;
+      left: 0;
+      right: 0%;  
+      }  
+      }
+    }
+    .about{
+    background-color:hsl(0, 0%, 100%);
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 232px;
+    padding: 30px;
+
+    .presentation{
+    margin-bottom: 40px;
+    h3{
+    margin-bottom: 32px;
+    }
+    
+    p{
+    margin-bottom: 30px;  
+    }
+    }
+    .cards{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;  
+    }
+    }
+}
+
